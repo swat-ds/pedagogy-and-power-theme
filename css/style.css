@@ -1800,6 +1800,9 @@ header {
     color: #173e43;
     background-color: #fae596; }
 
+#secondary-nav a, .secondary-nav a {
+  display: none; }
+
 /*------- Main search bar ---- */
 #search-container {
   display: none; }
@@ -1829,6 +1832,9 @@ p {
     @media screen and (max-width: 960px) {
       #exhibits-container .exhibit-preview {
         height: 100%; } }
+    #exhibits-container .exhibit-preview a img.thumb {
+      width: 200px;
+      height: 200px; }
     #exhibits-container .exhibit-preview div {
       vertical-align: top; }
   #exhibits-container .exhibit-preview:hover {
