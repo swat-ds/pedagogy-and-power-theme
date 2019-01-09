@@ -1813,12 +1813,12 @@ p {
   line-height: 27px; 
 }
 
-#exhibits-container {
+.exhibits-container {
   width: 90%;
   margin-left: auto;
   margin-right: auto; 
 }
-#exhibits-container .exhibit-preview {
+.exhibits-container .exhibit-preview {
   width: 45%;
   min-width: 310px;
   height: 385px;
@@ -1830,20 +1830,20 @@ p {
   line-height: 14.4px; 
 }
 @media screen and (max-width: 960px) {
-  #exhibits-container .exhibit-preview {
+  .exhibits-container .exhibit-preview {
         height: 100%; 
         } 
       }
-  #exhibits-container .exhibit-preview div {
+  .exhibits-container .exhibit-preview div {
       vertical-align: top; 
     }
-  #exhibits-container .exhibit-preview:hover {
+  .exhibits-container .exhibit-preview:hover {
     background-color: #3fb0ac; 
   }
-  #exhibits-container .exhibit-preview:hover a h3, #exhibits-container .exhibit-preview:hover h2 a, #exhibits-container .exhibit-preview:hover p {
+  .exhibits-container .exhibit-preview:hover a h3, .exhibits-container .exhibit-preview:hover h2 a, .exhibits-container .exhibit-preview:hover p {
       color: #fae596; 
     }
-  #exhibits-container .exhibit-preview:hover p.tags:hover a {
+  .exhibits-container .exhibit-preview:hover p.tags:hover a {
       color: #fff; 
     }
 
