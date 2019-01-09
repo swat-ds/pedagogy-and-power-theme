@@ -1,3 +1,4 @@
+</div>
 </div><!-- end content -->
 
 <footer role="contentinfo">

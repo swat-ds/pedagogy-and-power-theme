@@ -4,6 +4,11 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif");
+@import url("http://fonts.googleapis.com/css?family=Special+Elite");
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("http://fonts.googleapis.com/css?family=Bevan");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -169,7 +174,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /**
@@ -275,7 +281,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -297,6 +304,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -357,7 +365,8 @@ th {
 /* @end */
 /* @group ----- Generic ----- */
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
   font: 12px Helvetica, Arial, sans-serif;
@@ -566,7 +575,8 @@ header {
     padding: 3px;
     width: 100%;
     behavior: url("../javascripts/boxsizing.htc");
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   #search-container button {
     background: #369;
     color: white;
@@ -598,7 +608,8 @@ header {
   text-decoration: none;
   text-indent: -9999px;
   behavior: url("../javascripts/boxsizing.htc");
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .show-advanced.button:after {
     content: "\2026";
     display: block;
@@ -625,7 +636,8 @@ header {
   width: 100%;
   padding: 1.5em 1em;
   *behavior: url("../javascripts/boxsizing.htc");
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   #advanced-form fieldset p {
     margin: 0; }
   #advanced-form > *:last-child {
@@ -710,6 +722,7 @@ header {
     #primary-nav {
       width: 420px; } }
   #primary-nav .nav-menu {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
@@ -721,8 +734,9 @@ header {
     overflow: visible;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     border-right: 1px solid #ccc; }
   #primary-nav li {
     list-style-type: none;
@@ -736,8 +750,9 @@ header {
     float: none;
     position: relative;
     overflow: visible;
-    -ms-flex: 1 0 auto;
-        flex: 1 0 auto; }
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto; }
     #primary-nav .nav-item:first-child > a {
       border-left: 1px solid #ccc; }
   #primary-nav .nav-item > a {
@@ -786,7 +801,8 @@ header {
     top: 36px;
     margin-top: 1px;
     z-index: 1000;
-    box-shadow: 0 3px 5px #ccc; }
+    -webkit-box-shadow: 0 3px 5px #ccc;
+            box-shadow: 0 3px 5px #ccc; }
   #primary-nav .sub-nav ul {
     vertical-align: top;
     margin: 0;
@@ -807,7 +823,8 @@ header {
     width: 100%; }
   #primary-nav a {
     behavior: url("../javascripts/boxsizing.htc");
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-decoration: none;
     display: block;
     padding: 9px 18px;
@@ -1342,7 +1359,8 @@ ul.title-list {
 .collection .image,
 .exhibit .image {
   display: block;
-  box-shadow: -5px -5px 0 -1px #f2f2f2, -5px -5px 0 #ccc, -8px -8px 0 -1px #ddd, -8px -8px 0 #CCC;
+  -webkit-box-shadow: -5px -5px 0 -1px #f2f2f2, -5px -5px 0 #ccc, -8px -8px 0 -1px #ddd, -8px -8px 0 #CCC;
+          box-shadow: -5px -5px 0 -1px #f2f2f2, -5px -5px 0 #ccc, -8px -8px 0 -1px #ddd, -8px -8px 0 #CCC;
   margin: 0 18px 18px 9px; }
 
 .collection .image img,
@@ -1657,7 +1675,8 @@ footer {
   margin: 18px auto;
   padding: 0 40px 0 80px;
   float: none;
-  box-sizing: content-box; }
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
 
 .exhibit-items .download-file:last-child {
   margin-bottom: 18px; }
@@ -1672,6 +1691,153 @@ footer {
   display: inline; }
 
 /* @end */
+/* @group ----- Header ----- */
+header {
+  width: 100%;
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, color-stop(60%, rgba(109, 213, 237, 0.65)), to(rgba(33, 147, 176, 0.8)));
+  background: linear-gradient(to left, rgba(109, 213, 237, 0.65) 60%, rgba(33, 147, 176, 0.8) url("../../../img/education.jpg"));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% auto;
+  padding: 0 0;
+  margin: 0 0 .5em 0;
+  min-height: 15em; }
+  header #site-title {
+    float: unset;
+    width: unset;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+    padding: rhythm(1) 0; }
+    header #site-title:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      header #site-title {
+        width: 768px; } }
+    @media only screen and (max-width: 767px) {
+      header #site-title {
+        width: 300px; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      header #site-title {
+        width: 420px; } }
+    header #site-title a {
+      color: #fff;
+      line-height: 10rem;
+      max-width: 915px;
+      display: block;
+      font-family: "Bevan"; }
+      @media only screen and (max-width: 375px) {
+        header #site-title a {
+          font-size: 1.5rem;
+          letter-spacing: .1rem; } }
+    header #site-title a:hover {
+      color: #fae596; }
+
+/* ----- Main Content ----- */
+.landing {
+  width: 100%; }
+  .landing #content {
+    width: 75%;
+    margin: 0 auto; }
+
+/*----nav----*/
+#mobile-nav {
+  text-transform: uppercase;
+  font-family: "Droid Serif";
+  font-size: 14.4px;
+  border: unset;
+  border-bottom: 1.5px solid #fbebae, 0.8;
+  border-radius: 5px;
+  margin-right: .2rem; }
+  #mobile-nav ul.navigation li ul {
+    text-transform: capitalize; }
+
+#primary-nav {
+  /*& .sub-nav {
+        border: none;
+    }
+
+    & .sub-nav a {
+        line-height: 1.5rem;
+        // text-transform: capitalize;
+    }
+
+    & .sub-nav a:first-letter {
+        // text-transform: lowercase;
+    }*/ }
+  #primary-nav .nav-menu {
+    border-right: none;
+    margin-bottom: .8rem; }
+  #primary-nav ul {
+    display: inline-block; }
+  #primary-nav .nav-item > a {
+    text-transform: uppercase;
+    text-align: center; }
+  #primary-nav .nav-item a,
+  #primary-nav .nav-item:first-child > a,
+  #primary-nav .nav-item > a:focus,
+  #primary-nav .nav-item > a.open {
+    font-family: "Droid Serif";
+    font-size: 18px;
+    border: unset;
+    border-bottom: 5.5px solid #173e43;
+    border-radius: 4px;
+    margin-right: 5rem; }
+  #primary-nav .nav-item a,
+  #primary-nav .nav-item a.open {
+    background-color: #fae596;
+    color: #173e43; }
+  #primary-nav .nav-item.active a {
+    border-bottom-color: #fae596; }
+  #primary-nav a:hover {
+    color: #173e43;
+    background-color: #fae596; }
+
+/*------- Main search bar ---- */
+#search-container {
+  display: none; }
+
+#content {
+  border: none; }
+
+p {
+  font-family: "Droid Serif";
+  font-size: 18px;
+  line-height: 27px; }
+
+#exhibits-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  #exhibits-container .exhibit-preview {
+    width: 45%;
+    min-width: 310px;
+    height: 385px;
+    float: left;
+    border-bottom: 2px solid #fff;
+    padding: 1em 1em 0 1em;
+    margin: 0 1em;
+    font-size: 14.4px;
+    line-height: 14.4px; }
+    @media screen and (max-width: 960px) {
+      #exhibits-container .exhibit-preview {
+        height: 100%; } }
+    #exhibits-container .exhibit-preview div {
+      vertical-align: top; }
+  #exhibits-container .exhibit-preview:hover {
+    background-color: #3fb0ac; }
+    #exhibits-container .exhibit-preview:hover a h3, #exhibits-container .exhibit-preview:hover h2 a, #exhibits-container .exhibit-preview:hover p {
+      color: #fae596; }
+    #exhibits-container .exhibit-preview:hover p.tags:hover a {
+      color: #fff; }
+
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */
   input[type=text], input[type=password], textarea {
@@ -1799,7 +1965,8 @@ footer {
     float: none; }
   .exhibit .description ~ * {
     padding: 0;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   /* @end */
   /* @group ----- Exhibits/Show ----- */
   #exhibit-pages {
