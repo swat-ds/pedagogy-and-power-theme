@@ -1696,10 +1696,7 @@ header {
   width: 100%;
   background: #2193b0;
   /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, color-stop(60%, rgba(109, 213, 237, 0.65)), to(rgba(33, 147, 176, 0.8)));
-  background: linear-gradient(to left, rgba(109, 213, 237, 0.65) 60%, rgba(33, 147, 176, 0.8) url("../../../img/education.jpg"));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: -webkit-linear-gradient(right, rgba(63, 176, 172, 0.85) 70%, rgba(250, 229, 150, 0.5)), url("../img/education.jpg");
   background-size: 100% auto;
   padding: 0 0;
   margin: 0 0 .5em 0;
