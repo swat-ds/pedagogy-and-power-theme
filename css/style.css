@@ -1834,11 +1834,12 @@ p {
       height: 200px; }
     #exhibits-container .exhibit-preview div {
       vertical-align: top; }
+  #exhibits-container .exhibit-preview:link a {
+    text-decoration: none; }
   #exhibits-container .exhibit-preview:hover {
     background-color: #3fb0ac; }
     #exhibits-container .exhibit-preview:hover a h3, #exhibits-container .exhibit-preview:hover h2 a, #exhibits-container .exhibit-preview:hover p {
-      color: #fae596;
-      text-decoration: none; }
+      color: #fae596; }
     #exhibits-container .exhibit-preview:hover p.tags:hover a {
       color: #fff; }
 
