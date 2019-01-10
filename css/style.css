@@ -1821,7 +1821,7 @@ p {
     min-width: 310px;
     height: 385px;
     float: left;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ff8000;
     padding: 1em 1em 0 1em;
     margin: 0 1em;
     font-size: 14.4px;
@@ -1837,7 +1837,8 @@ p {
   #exhibits-container .exhibit-preview:hover {
     background-color: #3fb0ac; }
     #exhibits-container .exhibit-preview:hover a h3, #exhibits-container .exhibit-preview:hover h2 a, #exhibits-container .exhibit-preview:hover p {
-      color: #fae596; }
+      color: #fae596;
+      text-decoration: none; }
     #exhibits-container .exhibit-preview:hover p.tags:hover a {
       color: #fff; }
 
