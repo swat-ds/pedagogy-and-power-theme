@@ -1741,8 +1741,8 @@ header {
 .landing {
   width: 100%; }
   .landing #content {
-    width: 75%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 18px 0px; }
 
 /*----nav----*/
 #mobile-nav {
