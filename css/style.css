@@ -1774,6 +1774,8 @@ header {
     margin-bottom: .8rem; }
   #primary-nav ul {
     display: inline-block; }
+  #primary-nav li {
+    width: 20%; }
   #primary-nav .nav-item > a {
     text-transform: uppercase;
     text-align: center; }
